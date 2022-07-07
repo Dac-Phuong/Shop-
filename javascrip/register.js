@@ -11,7 +11,7 @@ function register(e) {
 
     var jon = JSON.stringify(user);
     localStorage.setItem(user_name,jon);
-    alert("dang ky thanh cong");
+    alert("Đăng ký thành công");
 }
 function login(e) {
     event.preventDefault();
@@ -20,12 +20,12 @@ function login(e) {
     var user = localStorage.getItem(user_name);
     var data = JSON.parse(user);
     if (user == null) {
-        alert("vui long nhap lai password")
+        alert("Sai tài khoản hoặc mật khẩu")
     }
     else if (user_name == data.user_name && password == data.password) {
         window.location.href="index.html"
     }
     else{
-        alert("dang nhap that bai");
+        alert("Đăng nhập thất bại");
     }
 }
