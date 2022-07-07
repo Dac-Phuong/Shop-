@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./acsset/main.css">
     <link rel="stylesheet" href="./acsset/blogs.css">
     <link rel="stylesheet" href="./acsset/login.css">
-    <title>Register</title>
+    <title>Login</title>
 </head>
 <body>
     <div class="wrapper">
@@ -141,19 +141,19 @@
                 <div class="wrap__register">
                     <div class="wrap__login">
                         <h2 class="wrap__login-h2">Login</h2>
-                        <form action="" class="login__form">                
+                        <form action="" class="login__form" onsubmit="login()">                
                             <div class="login__input">
                                 <label class="label" for="">Username</label>
                                 <div class="login__div">
                                     <i class="login__icon fa-solid fa-user"></i>
-                                    <input type="text" class="input" placeholder="Type your username" >
+                                    <input type="text" id="user_name" class="input" placeholder="Type your username" >
                                 </div>
                             </div>
                             <div class="login__input">
                                 <label class="label" for="">Password</label>
                                 <div class="login__div">
                                     <i class="login__icon fa-solid fa-lock"></i>
-                                    <input type="password" class="input" placeholder="Type your password" >
+                                    <input type="password" id="password" class="input" placeholder="Type your password" >
                                     <span class="span"></span>
                                 </div>
                             </div>
@@ -161,7 +161,7 @@
                                 <a href="./register.html" class="forgot__link">Forgot password ?</a>
                             </div>
                             <div class="login__btn">
-                                <button class="button">Login</button>
+                                <button id="btn" class="button">Login</button>
                             </div>
                         </form>               
                     </div>
@@ -314,6 +314,6 @@
             </div>
         </div>
     </div>
-    
+<script src="./javascrip/register.js"></script>
 </body>
 </html>

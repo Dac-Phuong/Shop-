@@ -68,7 +68,7 @@
     background-color: #435996;
     transition:  1s linear ;
 }
-.login__input:hover .login__div::after{
+.input ~ .login__div::after{
     visibility: visible;
     width: 100%;
     transition:  1s linear ;

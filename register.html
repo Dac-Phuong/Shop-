@@ -139,42 +139,41 @@
                 <div class="wrap__register">
                     <div class="wrap__login">
                         <h2 class="wrap__login-h2">Register</h2>
-                        <form action="" class="login__form">                
+                        <form action="" class="login__form" onsubmit="register()">                
                             <div class="login__input">
                                 <label class="label" for="">Username</label>
                                 <div class="login__div">
                                     <i class="login__icon fa-solid fa-user"></i>
-                                    <input type="text" class="input" placeholder="Type your username" >
+                                    <input id="user_name" type="text" class="input" placeholder="Type your username" >
+                                </div>
+                            </div>
+                            <div class="login__input">
+                                <label class="label" for="">Email</label>
+                                <div class="login__div">
+                                    <i class="login__icon fa-solid fa-at"></i>
+                                    <input id="email" type="text" class="input" placeholder="Your email address" >
                                 </div>
                             </div>
                             <div class="login__input">
                                 <label class="label" for="">Password</label>
                                 <div class="login__div">
                                     <i class="login__icon fa-solid fa-lock"></i>
-                                    <input type="password" class="input" placeholder="Type your password" >
+                                    <input id="password" type="password" class="input" placeholder="Type your password" >
                                 </div>
                             </div>
                             <div class="login__input">
                                 <label class="label" for="">Comfirm password</label>
                                 <div class="login__div">
                                     <i class="login__icon fa-solid fa-key"></i>
-                                    <input type="password" class="input" placeholder="Type your password" >
+                                    <input id="password" type="password" class="input" placeholder="Type your password" >
                                 </div>
                             </div>
-                            
-                            <div class="login__input">
-                                <label class="label" for="">Email</label>
-                                <div class="login__div">
-                                    <i class="login__icon fa-solid fa-at"></i>
-                                    <input type="text" class="input" placeholder="Your email address" >
-                                </div>
-                            </div>
-                            
+                  
                             <div class="forgot__login">
                                 <a href="./login.html" class="forgot__link">Login ?</a>
                             </div>
                             <div class="login__btn">
-                                <button class="button">Submit</button>
+                                <button id="btn" class="button">Submit</button>
                             </div>
                         </form>               
                     </div>               
@@ -305,6 +304,6 @@
             </div>
         </div>
     </div>
-    
+<script src="./javascrip/register.js"></script>
 </body>
 </html>
