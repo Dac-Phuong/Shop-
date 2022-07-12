@@ -845,6 +845,7 @@ p {
 .menu__app-banner {
     height: 100%;
     line-height: 130px;
+    align-items: center;
 }
 
 .app__link {
@@ -854,6 +855,7 @@ p {
 
 .app__img {
     max-height: 50px;
+    margin-top: 20px;
 }
 
 .overlay {

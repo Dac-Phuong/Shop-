@@ -149,8 +149,5 @@
     .wrap__main{
         max-width: 350px;
     }
-    .header__app,
-    .footer{
-        display: none;
-    }
+    
 }
