@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./acsset/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./acsset/main.css">
+    <link rel="stylesheet" href="./acsset/blogs.css">
     <link rel="stylesheet" href="./acsset/introduce.css">
     <link rel="stylesheet" href="./acsset/product.css">
     <title>Product</title>
@@ -52,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__menu">
+                <div id="header__menu" class="header__menu fade-top">
                     <div class="header__menu-div">
                         <ul class="header__menu-list">
                             <li class="header__menu-item">
@@ -181,6 +182,66 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="blogs__posts">
+                            <h3 style="color: black;padding: 20px 0;">Sản phẩm bán chạy</h3>
+                            <ul class="blogs__list">
+                                <li class="blogs__item">
+                                    <div class="blogs__item-img">
+                                        <img src="./acsset/img/m3.png" alt="" class="blogs__item-img">
+                                    </div>
+                                    <div class="blogs__item-title">
+                                        <a href="" class="blogs__link">
+                                            <p class="blogs__item-p">Đồng hồ thể thao nam Skmei 1271 Đồng hồ thể thao nam Skmei 1271</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <hr class="blogs__hr">
+                                <li class="blogs__item">
+                                    <div class="blogs__item-img">
+                                        <img src="./acsset/img/m9.jpg" alt="" class="blogs__item-img">
+                                    </div>
+                                    <div class="blogs__item-title">
+                                        <a href="" class="blogs__link">
+                                            <p class="blogs__item-p"> chiếc đồng hồ dành cho nữ giới đắt giá nhất mọi</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <hr class="blogs__hr">
+                                <li class="blogs__item">
+                                    <div class="blogs__item-img">
+                                        <img src="./acsset/img/m8.webp" alt="" class="blogs__item-img">
+                                    </div>
+                                    <div class="blogs__item-title">
+                                        <a href="" class="blogs__link">
+                                            <p class="blogs__item-p">Đồng hồ classic dành cho nữ giới </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <hr class="blogs__hr">
+                                <li class="blogs__item">
+                                    <div class="blogs__item-img">
+                                        <img src="./acsset/img/m10.webp" alt="" class="blogs__item-img">
+                                    </div>
+                                    <div class="blogs__item-title">
+                                        <a href="" class="blogs__link">
+                                            <p class="blogs__item-p">Casio ra mắt đồng hồ thông minh thương hiệu G-Shock để cạnh tranh với Apple Watch?</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <hr class="blogs__hr">
+                                <li class="blogs__item">
+                                    <div class="blogs__item-img">
+                                        <img src="./acsset/img/m7.jpg" alt="" class="blogs__item-img">
+                                    </div>
+                                    <div class="blogs__item-title">
+                                        <a href="" class="blogs__link">
+                                            <p class="blogs__item-p">Chiếc đồng hồ của những CEO quyền lực nhất thế giới</p>
+                                        </a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
                     </div>
                     <div class="main__product-columns">
                         <div class="main__product-colum">
@@ -371,7 +432,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main__order">
+                <div class="main__order reveal ">
                     <ul class="main__order-number">
                         <li class="main__order-item">
                             <a href="" class="order__number-link">
@@ -408,10 +469,10 @@
             </div>
             <div class="main__selection">
                 <div class="main__select">
-                    <div class="selection__conten">
+                    <div class="selection__conten reveal fade-left">
                         <h2 class="selection__register">ĐĂNG KÝ NHẬN THÔNG TIN</h2>
                     </div>
-                    <div class="selection__input">
+                    <div class="selection__input reveal fade-right">
                         <input type="text" class="selection__btn" placeholder="Email">
                         <div class="class__btn">
                             <a href="" class="class__link">ĐĂNG KÝ</a>
@@ -419,6 +480,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="dialog modal" id="my-dialog">
 
@@ -457,13 +519,11 @@
                     </div>
                     <div class="modal__shop">
                         <div class="modal__price-add">
-                            <a href="" class="price__div-link">
+                            <a href="./login.html" class="price__div-link">
                                 <i class="order__icon fa-solid fa-cart-plus"></i> THÊM VÀO GIỎ HÀNG
                             </a>
                         </div>
-                        <div class="modal__price-div">
-                            <a href="./login.html" class="price__div-link">MUA NGAY</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -594,5 +654,7 @@
         </div>
     </div>
 </body>
-
+<script src="./javascrip/register.js">
+    
+</script>
 </html>

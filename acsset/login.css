@@ -145,9 +145,20 @@
     padding: 12px;
     text-decoration: none;
 }
-@media (max-width:500px) {
+@media (max-width:499px) {
     .wrap__main{
         max-width: 350px;
     }
-    
+    .wrap__register{
+        margin-top: 45px;
+    }
+
+}
+@media (min-width:500px) and (max-width:1200px) {
+    .wrap__main{
+        max-width: 350px;
+    }
+    .wrap__register{
+        margin-top: 45px;
+    }
 }

@@ -9,7 +9,13 @@
     width: 100%;
     object-fit: contain;
 }
-
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333333;
+}
 .intro__conten {
     width: 50%;
     margin: auto;
@@ -49,7 +55,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -20px;
-    padding: 30px 0;
 }
 
 .intro__columns-6 {
@@ -191,6 +196,8 @@
     .intro {
         flex-wrap: wrap;
         width: 100%;
+        margin-top: 120px;
+
     }
     .intro__conten,
     .div__img {
@@ -222,6 +229,7 @@
     .intro__user-columns {
         width: 100%;
     }
+    
 }
 
 
@@ -231,6 +239,11 @@
     .intro {
         flex-wrap: wrap;
         width: 100%;
+        margin-top: 120px;
+
+    }
+    .main{
+        margin-top: 70px;
     }
     .intro__product {
         top: 25%;

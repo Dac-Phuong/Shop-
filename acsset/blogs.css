@@ -191,9 +191,12 @@
     -webkit-box-orient: vertical;
 }
 
-@media (min-width:600px) and (max-width:1000px) {
+@media (min-width:600px) and (max-width:1200px) {
     .blogs__wraper {
         display: none;
+    }
+    .blogs__container{
+        margin-top: 80px;
     }
     .blogs__poster {
         width: calc(50% - 20px);
@@ -208,6 +211,9 @@
 @media (max-width:599px) {
     .blogs__wraper {
         display: none;
+    }
+    .blogs__container{
+        margin-top: 80px;
     }
     .blogs__poster {
         width: calc(100% - 20px);

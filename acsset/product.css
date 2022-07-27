@@ -279,7 +279,7 @@
 .modal__container {
     z-index: 2;
     position: relative;
-    max-width: 1000px;
+    max-width: 700px;
     height: 500px;
     margin: auto;
     display: flex;
@@ -424,11 +424,18 @@ hr {
     .main__product-colum {
         width: calc(33.333% - 20px);
     }
+    .main,
+    .main__cotainer{
+        margin-top: 70px;
+    }
 }
 
 @media (max-width:549px) {
     .main__product {
         flex-wrap: wrap;
+    }
+    .main__cotainer{
+        margin-top: 70px;
     }
     .main__home {
         width: 100%;

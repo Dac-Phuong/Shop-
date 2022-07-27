@@ -87,11 +87,11 @@
     border: none;
     padding:0 10px ;
     color: #000;
-}
-.contact__input-name{
     font-size: 16px;
+    border-radius: 8px;
     background-color: #f1f1f1;
 }
+
 .contact__input-btn{
     width: 100%;
     margin: auto;
@@ -101,15 +101,35 @@
 
 .contact__btn{
     height: 40px;
-outline: none;
-color: #fff;
-background-color: #c89979;
-border: none;
-margin: 4px ;
-cursor: pointer;
-font-size: 16px;
+    outline: none;
+    color: #fff;
+    background-color: #c89979;
+    border: none;
+    margin: 4px ;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
     font-weight: 700;
     min-width: 50%;
+}
+
+.class__btn {
+    line-height: 40px;
+    width: 100px;
+    right: 14px;
+    align-items: center;
+    background-color: #c89979;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.class__link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
 }
 
 @media (min-width:600px) and (max-width:1000px) {
@@ -119,16 +139,36 @@ font-size: 16px;
     .contact__address-item{
         width: 50%;
     }
+    .main__container{
+        margin-top: 80px;
+    }
+    .contact__input-name{
+        border-radius: 20px;
+    }
+    .contact__btn{
+        border-radius: 20px;
+
+    }
 }
 
 @media (max-width:599px) {
     .contact__address{
         flex-wrap: wrap;
     }
+    .main__container{
+        margin-top: 80px;
+    }
     .contact__address-item{
         width: 100%;
     }
     .contact__input{
         width: 100%;
+    }
+    .contact__input-name{
+        border-radius: 20px;
+    }
+    .contact__btn{
+        border-radius: 20px;
+
     }
 }

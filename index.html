@@ -10,7 +10,27 @@
     <link rel="stylesheet" href="./acsset/fontawesome-free-6.1.1-web/css/all.min.css">
     <title>shop</title>
 </head>
-
+<script>
+    var arr_hinh =[
+    "./acsset/img/slide-bg-2.jpg",
+    "./acsset/img/slide-bg-1.jpg",
+    "./acsset/img/trend-2.jpg",
+    ]
+    var index = 0;
+    function next(){
+        index ++;
+        if(index >= arr_hinh.length)index=1;
+        var image = document.getElementById("silder__item-img");
+        image.src = arr_hinh[index];
+    }
+    function prev(){
+        index --;
+        if(index <0)index = arr_hinh.length -1;
+        var image = document.getElementById("silder__item-img");
+        image.src = arr_hinh[index];
+    }
+    setInterval("next()",3000);
+</script>
 <body>
     <div class="wrapper">
         <div class="header">
@@ -51,9 +71,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__menu">
+                <div id="header__menu" class="header__menu fade-top">
                     <div class="header__menu-div">
-                        <ul class="header__menu-list">
+                        <ul  class="header__menu-list">
                             <li class="header__menu-item">
                                 <a href="./index.html" class="header__menu-link">TRANG CHỦ</a>
                             </li>
@@ -73,8 +93,7 @@
                                 <a href="./contact.html" class="header__menu-link">LIÊN HỆ</a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="./login.html" class="header__menu-link">ĐĂNG NHẬP</a>
-                            
+                                <a href="./login.html" class="header__menu-link">ĐĂNG NHẬP</a>                     
                         </ul>
                     </div>
                 </div>
@@ -139,33 +158,26 @@
         </div>
         <div class="slider">
             <div class="slider__list">
-                <div class="slider__item">
-                    <img src="./acsset/img/slide-bg-2.jpg" alt="" class="silder__item-img">
-                    <div class="slider__conten">
-                        <h4 class="slider__h4">Mona Watch</h4>
-                        <h1 class="slider__h1">Đồng hồ Classico</h1>
-                        <p class="slider__p">Cùng với sự phát triển không ngừng của thời trang thế giới, rất nhiều thương hiệu cho ra đời những mẫu đồng hồ nam chính hãng đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ…</p>
-                        <a href="./product.html" class="slider__btn">XEM SẢN PHẨM</a>
-                    </div>
+                <div class="slider__conten">
+                    <h4 class="slider__h4">Mona Watch</h4>
+                    <h1 class="slider__h1">Đồng hồ Classico</h1>
+                    <p class="slider__p">Cùng với sự phát triển không ngừng của thời trang thế giới, rất nhiều thương hiệu cho ra đời những mẫu đồng hồ nam chính hãng đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ…</p>
+                    <a href="./product.html" class="slider__btn">XEM SẢN PHẨM</a>
                 </div>
-                <div class="slider__item">
-                    <img src="./acsset/img/slide-bg-2.jpg" alt="" class="silder__item-img">
-                </div>
-                <div class="slider__item">
-                    <img src="./acsset/img/slide-bg-1.jpg" alt="" class="silder__item-img">
-                </div>
+                <div class="slider__item active"><img src="./acsset/img/slide-bg-2.jpg" alt="" id="silder__item-img" style="width: 100%;height: 100%;object-fit: cover;"></div>
+                
             </div>
             <div class="controller">
-                <div class="control left"><i class="control__icon fa-solid fa-angle-left"></i></div>
-                <div class="control right"><i class="control__icon fa-solid fa-angle-right"></i></div>
+                <span class="control "><i class="control__icon-left fa-solid fa-angle-left"onclick="prev()" ></i></span>">
+                <span class="control "><i class="control__icon-right fa-solid fa-angle-right" onclick="next()"></i></span>">
             </div>
         </div>
         <div class="main">
-            <div class="main__grid">
-                <div class="main___row">
-                    <div class="main__row-column-2 ">
+            <div class="main__grid ">
+                <div class="main___row ">
+                    <div class="main__row-column-2 reveal fade-left">
                         <div class="main__row-column">
-                            <a href="" class="main__row-link">
+                            <a href="./product.html" class="main__row-link">
                                 <img src="./acsset/img/trend-1.jpg" alt="" class="main__row-banner height">
                             </a>
                             <div class="main__row-conten">
@@ -177,9 +189,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main__row-column-2 ">
+                    <div class="main__row-column-2 reveal fade-right">
                         <div class="main__row-column">
-                            <a href="" class="main__row-link">
+                            <a href="./product2.html" class="main__row-link">
                                 <img src="./acsset/img/trend-2.jpg" alt="" class="main__row-banner height">
                             </a>
                             <div class="main__row-conten">
@@ -192,9 +204,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="grid__product">
+            <div class="grid__product reveal">
                 <h2 class="grid__row-text">Sản phẩm bán chạy</h2>
                 <div class="grid__row">
                     <div class="grid__row-columns colums-app">
@@ -265,7 +276,7 @@
             </div>
             <div class="main__grid ">
                 <div class="main___row">
-                    <div class="main__row-column-2">
+                    <div class="main__row-column-2 reveal fade-left">
                         <div class="main__row-column">
                             <a href="" class="main__row-link">
                                 <img src="./acsset/img/banner-03.jpg" alt="" class="main__row-banner">
@@ -278,7 +289,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main__row-column-2">
+                    <div class="main__row-column-2 reveal fade-right">
                         <div class="main__row-column">
                             <a href="" class="main__row-link">
                                 <img src="./acsset/img/banner-04.jpg" alt="" class="main__row-banner">
@@ -298,7 +309,7 @@
                 </div>
 
             </div>
-            <div class="grid__product">
+            <div class="grid__product reveal">
                 <h2 class="grid__row-text">Sản phẩm phổ biến</h2>
                 <div class="grid__row row__flex">
                     <div class="grid__row-columns column-5">
@@ -395,34 +406,7 @@
                         </a>
 
                     </div>
-                    <div class="grid__row-columns column-5">
-                        <a style="text-decoration: none;" href="" class="grid__link">
-                            <div class="row__column-4-1">
-                                <img src="./acsset/img/product-14.jpg" alt="" class="row__column-img">
-                            </div>
-                            <div class="row__price">
-                                <h4 class="row__conten ">Simple 2</h4>
-
-                                <p class="price">800,000đ</p>
-                                <a href="#my-dialog" class="row__price-btn">THÊM VÀO GIỎ</a>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="grid__row-columns column-5">
-                        <a style="text-decoration: none;" href="" class="grid__link">
-                            <div class="row__column-4-1">
-                                <img src="./acsset/img/product-16.jpg" alt="" class="row__column-img">
-                            </div>
-                            <div class="row__price">
-                                <h4 class="row__conten ">Simple 10</h4>
-
-                                <p class="price"> 1,300,000đ</p>
-                                <a href="#my-dialog" class="row__price-btn">THÊM VÀO GIỎ</a>
-                            </div>
-                        </a>
-
-                    </div>
+                   
                     <div class="grid__row-columns column-5">
                         <a style="text-decoration: none;" href="" class="grid__link">
                             <div class="row__column-4-1">
@@ -430,7 +414,6 @@
                             </div>
                             <div class="row__price">
                                 <h4 class="row__conten ">Simple 12</h4>
-
                                 <p class="price"> 1,800,000đ</p>
                                 <a href="#my-dialog" class="row__price-btn">THÊM VÀO GIỎ</a>
                             </div>
@@ -439,9 +422,9 @@
                     </div>
                 </div>
             </div>
-            <div class="main__grid hr__footer">
+            <div class="main__grid hr__footer ">
                 <div class="main___row">
-                    <div class="main__row-column-2">
+                    <div class="main__row-column-2 reveal fade-left">
                         <div class="main__row-column">
                             <a href="" class="main__row-link link__column  ">
                                 <img src="./acsset/img/new-4.jpg" alt="" class="main__row-banner banner">
@@ -454,7 +437,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main__row-column-2">
+                    <div class="main__row-column-2  reveal ">
                         <div class="main__row-column">
                             <a href="" class="main__row-link link__column ">
                                 <img src="./acsset/img/trend-2.jpg" alt="" class="main__row-banner banner">
@@ -467,7 +450,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main__row-column-2">
+                    <div class="main__row-column-2  reveal fade-right">
                         <div class="main__row-column">
                             <a href="" class="main__row-link link__column ">
                                 <img src="./acsset/img/new-3.jpg" alt="" class="main__row-banner banner">
@@ -484,12 +467,12 @@
             </div>
             <div class="main__selection">
                 <div class="main__select">
-                    <div class="selection__conten">
+                    <div class="selection__conten reveal fade-left">
                         <h2 class="selection__register">ĐĂNG KÝ NHẬN THÔNG TIN</h2>
                     </div>
-                    <div class="selection__input">
+                    <div class="selection__input reveal fade-right">
                         <input type="text" class="selection__btn" placeholder="Email">
-                        <div class="class__btn">
+                        <div class="class__btn ">
                             <a href="" class="class__link">ĐĂNG KÝ</a>
                         </div>
                     </div>
@@ -532,13 +515,11 @@
                     </div>
                     <div class="modal__shop">
                         <div class="modal__price-add">
-                            <a href="" class="price__div-link">
+                            <a href="./login.html" class="price__div-link">
                                 <i class="order__icon fa-solid fa-cart-plus"></i> THÊM VÀO GIỎ HÀNG
                             </a>
                         </div>
-                        <div class="modal__price-div">
-                            <a href="./login.html" class="price__div-link">MUA NGAY</a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -668,5 +649,6 @@
         </div>
     </div>
 </body>
-
+    <script src="./javascrip/register.js">
+    </script>>
 </html>
