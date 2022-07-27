@@ -1060,6 +1060,7 @@ p {
     }
     .footer__adress {
         flex-wrap: wrap;
+        padding: 20px 15px;
     }
     .main__grid {
         padding: 0 15px 30px;
@@ -1084,6 +1085,9 @@ p {
     }
     .slider {
         margin-top: 89px;
+    }
+    .footer__conten{
+        padding: 20px 15px;
     }
 }
 
@@ -1123,6 +1127,9 @@ p {
     .main__grid {
         padding: 0 15px 30px;
     }
+    .footer__conten{
+        padding: 20px 15px;
+    }
     .grid__row,
     .grid__row-text {
         padding: 0 15px 30px;
@@ -1157,6 +1164,8 @@ p {
     .main__select,
     .footer__adress {
         flex-wrap: wrap;
+        padding: 20px 15px;
+
     }
     .first-child {
         width: 80%;
